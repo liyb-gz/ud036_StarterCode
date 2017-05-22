@@ -5,21 +5,34 @@ import re
 # A class that contains movie information: title, poster image and trailer video.
 # No methods are included.
 class Movie():
+    '''Records a movies' title, poster image url and trailer url.
+    
+    Instance variables:
+        title - title of the movie
+        poster_image_url - url of the movie's poster
+        trailer_youtube_url - url of the movie's trailer
+
+    No methods included.
+
+    '''
     def __init__(self, title, poster_image_url, trailer_youtube_url):
         self.title = title
         self.poster_image_url = poster_image_url
         self.trailer_youtube_url = trailer_youtube_url
 
 # 3 movies that I like
-lion_king = Movie('Lion King',
+lion_king = Movie(
+    'Lion King',
     'http://a1.att.hudong.com/33/18/01300000053870120007187823367.jpg',
     'https://www.youtube.com/watch?v=4sj1MT05lAA')
 
-titanic = Movie('Titanic',
+titanic = Movie(
+    'Titanic',
     'https://cdn.traileraddict.com/content/paramount-pictures/titanic.jpg',
     'https://www.youtube.com/watch?v=2e-eXJ6HgkQ')
 
-ai = Movie('A.I.',
+ai = Movie(
+    'A.I.',
     'http://www.impawards.com/2001/posters/ai_artificial_intelligence_xlg.jpg',
     'https://www.youtube.com/watch?v=_19pRsZRiz4')
 
